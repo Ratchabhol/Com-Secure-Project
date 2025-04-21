@@ -10,7 +10,7 @@ if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
 # เปิดกล้อง
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1) # ใช้กล้องที่ 1 (0 สำหรับกล้องหลัก)
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
 print("Press 'q' to stop capturing images.")

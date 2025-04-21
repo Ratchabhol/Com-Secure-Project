@@ -6,7 +6,7 @@ recognizer.read("face_trainer.yml")
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
 # เปิดกล้อง
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)  # ใช้กล้องที่ 1 (0 สำหรับกล้องหลัก)
 
 print("Press 'q' to exit.")
 while True:
